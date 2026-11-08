@@ -1,0 +1,5 @@
+numbers = list(map(int, input("Введіть числа:").split()))
+head = numbers.pop(0)
+tail = numbers
+print(head)
+print(*tail)
