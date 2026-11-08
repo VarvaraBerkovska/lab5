@@ -1,0 +1,6 @@
+s = input("Введіть число:")
+variants = []
+for i in range(len(s)):
+    new = s[:i] + s[i+1:]
+    variants.append(int(new))
+print(max(variants))
