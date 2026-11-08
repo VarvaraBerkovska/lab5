@@ -1,0 +1,7 @@
+numbers = list(map(int, input("Введіть числа:").split()))
+result = []
+for n in numbers:
+  if numbers.count(n) > 1 and n not in result:
+    result.append(n)
+result.sort()
+print(*result)
