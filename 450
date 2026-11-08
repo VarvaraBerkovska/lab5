@@ -1,0 +1,8 @@
+numbers = list(map(int,input("Введіть числа:").split()))
+result = []
+for n in range(len(numbers) -1):
+  if numbers[n] * numbers[n + 1] > 0:
+    result.append(numbers[n])
+    result.append(numbers[n + 1])
+if result:
+    print(*result)
